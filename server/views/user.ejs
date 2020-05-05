@@ -1,0 +1,35 @@
+<% include partials/header %>
+  <div class="container user">
+    <h1 class="username"><%= user.username %></h1>
+    <form id="new" action="/<%= user.username %>" method="POST">
+      <textarea name="text" class="ask-form" placeholder="Ask <%= user.username %> a question" required></textarea>
+      <input type="submit" class="btn btn-primary ask-btn" value="Ask">
+      <label for="asker">Ask as: </label>
+      <select class="ask-as" name="asker" id="asker">
+        <option value="">Anonymous</option>
+        <% if(currentUser) { %>
+          <option value="<%= currentUser.username %>"><%= currentUser.username %></option>
+        <% } %>
+      </select>
+    </form>
+    <% questions.forEach(function(question){ %>
+      <% if(question.answer !== undefined) { %>
+        <div class="answered">
+          <div>
+           <a class="question-text" href="<%= question.asked %>/<%= question._id %>"><%= question.text %></a>
+           <a class="question-asker" href="/<%= question.asker %>"><%= question.asker %></a>
+          </div>
+          <hr>
+          <div class="answer">
+            <p><%= question.answer %></p>
+          </div>
+        </div>
+        <% if(currentUser && question.asked === currentUser.username) { %>
+          <form id="delete" action="/<%= currentUser.username %>/<%= question._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-large btn-danger">Delete</button>
+          </form>
+        <% } %>
+     <% } %>
+    <% }) %>
+  </div>
+<% include partials/footer %>

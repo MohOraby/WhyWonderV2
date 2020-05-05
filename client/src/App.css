@@ -1,0 +1,222 @@
+.App {
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #2b3237;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+/* Navbar */
+
+nav a {
+  transition: 0.1s;
+}
+
+/* Home */
+
+.welcome {
+  text-align: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slogan {
+  color: white;
+  padding-top: 250px;
+}
+
+.slogan h1 {
+  font-size: 65px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.slogan p {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.join {
+  margin: 0 auto 0 auto;
+  padding-top: 90px;
+  width: 200px;
+}
+
+.register {
+  color: red;
+  display: block;
+  margin: 10px 0 10px 0;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 0 5px 0;
+}
+
+.register:hover {
+  color: red;
+}
+
+.login {
+  color: red;
+  display: block;
+  margin: 10px 0 10px 0px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 5px 0 5px 0;
+}
+
+
+/* Login/Register Page */
+
+.login, .register {
+  margin: 0 auto;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.login-form {
+  width: 100%;
+  background-color: #ecebf6;
+}
+
+.register-form {
+  width: 100%;
+  background-color: #ecebf6;
+}
+
+form.login h1, form.register h1 {
+  margin-bottom: 30px;
+  color: #666363;
+}
+
+/* User Page */
+
+.user {
+  padding-top: 70px;
+  background-color: #ecebf6;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.username {
+  margin-bottom: 50px;
+}
+
+.ask-form {
+  width: 80%;
+  min-height: 70px;
+}
+
+.ask-btn {
+  display: block;
+}
+
+.ask-as {
+  color: #1662e2;
+  margin-left: 3px;
+  border-radius: 8px;
+  padding: 2px 7px 2px 7px;
+  background-color: #f2f2f2;
+}
+
+.answered {
+  background-color: white;
+  padding: 10px 0 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.answer {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/* Questions Page */
+
+.unanswered {
+  background-color: white;
+  padding: 10px 0 10px 20px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+}
+
+.question-text {
+  color: black;
+  font-size: 25px;
+}
+
+.question-text:hover {
+  color: black;
+}
+
+#delete {
+  display: inline;
+}
+
+.delete-btn {
+  margin-left: 15px;
+}
+
+.question-asker {
+  display: inline;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #FF643C;
+}
+
+.question-asker:hover {
+  color: #FF643C;
+}
+
+/* Question Page */
+
+.question {
+  margin-top: 70px;
+  padding: 20px 0 20px 20px;  
+  background-color: white;
+  border-radius: 10px;
+}
+
+.question h2 {
+  font-size: 25px;
+}
+
+.question p {
+  font-size: 15px;
+}
+
+/* Answer Page */
+
+.answer-form {
+  margin-top: 80px;
+  background-color: white;
+  width: 500px;
+  margin-left: 0;
+  min-height: 240px;
+}
+
+.answer-form h3 {
+  padding: 10px 0 0 10px;
+}
+
+.answer-box {
+  width: 490px;
+  height: 150px;
+  margin: 0 5px 0 5px;
+}
+
+.users-list {
+  margin: 0 auto;
+  padding-top: 60px;
+}

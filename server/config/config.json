@@ -1,0 +1,12 @@
+{
+  "development": {
+    "PORT": 3001,
+    "MONGODB_URL": "mongodb://localhost:27017/WhyV2",
+    "JWT_SECRET": "hjn8g4j84ghj8gfh4jffng641n"
+  },
+  "production": {
+    "PORT": 3002,
+    "MONGODB_URL": "mongodb://localhost:27017/WhyV2",
+    "JWT_SECRET": "hjn8g4j84ghj8gfh4jffng641n"
+  }
+}
